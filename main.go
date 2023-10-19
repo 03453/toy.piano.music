@@ -824,7 +824,7 @@ func main() {
        
             right_notes = note_append(right_notes,rh(right_next,column_three,rhythm(column_three)))
 
-            left_next, left_flag = next_note(notes, left_next, column_five, column_six, lower_bound, upper_bound, left_flag)
+            left_next, left_flag = next_note(notes, left_next, column_five, column_six, lower_bound+column_four, upper_bound-column_four, left_flag)
    
             fmt.Println(column_one,column_two,column_three,column_four,column_five,column_six,column_seven)
       
